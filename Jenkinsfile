@@ -3,6 +3,9 @@ pipeline {
   stages {
     stage('clone down'){
       agent {
+        node {
+
+        }
         label('host')
       }
       steps {
