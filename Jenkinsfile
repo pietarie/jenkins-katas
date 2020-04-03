@@ -61,8 +61,8 @@ pipeline {
       steps {
         input {
           message
-            Ready to go?
-            Proceed or Abort
+            'Ready to go?
+            Proceed or Abort'
         }
         unstash 'codeBin' //unstash the repository code
         sh 'ci/build-docker.sh'
