@@ -34,9 +34,7 @@ pipeline {
             archiveArtifacts 'app/build/libs/'
           }
         }
-
       }
     }
-
   }
 }
