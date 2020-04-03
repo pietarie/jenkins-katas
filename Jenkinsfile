@@ -60,10 +60,9 @@ pipeline {
       }
       steps {
         input {
-          message {
+          message
             Ready to go?
             Proceed or Abort
-          }
         }
         unstash 'codeBin' //unstash the repository code
         sh 'ci/build-docker.sh'
